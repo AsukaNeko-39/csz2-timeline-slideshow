@@ -8,6 +8,7 @@ import {
 import { landJourney } from "@/data/landJourney";
 import { landItems } from "@/data/catalog";
 import { assetUrl } from "@/lib/assets";
+import LandRoadTraffic from "./LandRoadTraffic";
 import "./land-journey.css";
 
 type Phase =
@@ -170,15 +171,7 @@ export default function LandJourney({
           <h3>{stage.era}</h3>
           <p>{stage.period}</p>
         </div>
-        <div className="land-journey-traffic" aria-hidden="true">
-          <div
-            className="land-journey-traffic-sprite"
-            style={{
-              ...spritePosition(index),
-              backgroundImage: `url("${imagePath("land-activities")}")`,
-            }}
-          />
-        </div>
+        <LandRoadTraffic index={index} />
         <div
           className="land-journey-narrator"
           role="img"
