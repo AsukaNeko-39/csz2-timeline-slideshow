@@ -4,7 +4,7 @@ export type EraSlide = {
   contain?: boolean;
 };
 
-// All images come from the project's existing historical material collection.
+// Images use existing project materials; the plough-head portrait rearranges its source image.
 export const timelineSlides: Record<string, EraSlide[]> = {
   "timeline-1": [
     { src: "/materials/重要文物/炭化稻谷.png", caption: "炭化稻谷 · 稻作起源" },
@@ -13,8 +13,8 @@ export const timelineSlides: Record<string, EraSlide[]> = {
   ],
   "timeline-2": [
     {
-      src: "/materials/重要文物/铁质耕具.png",
-      caption: "铁质耕具",
+      src: "/materials/重要文物/铁犁头-竖版.png",
+      caption: "铁犁头",
       contain: true,
     },
     { src: "/manus-storage/point-ziquejie.jpg", caption: "紫鹊界梯田（现状）" },
