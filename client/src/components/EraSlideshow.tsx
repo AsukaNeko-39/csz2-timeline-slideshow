@@ -23,6 +23,8 @@ export default function EraSlideshow({
   const [focused, setFocused] = useState(false);
   const [manualPlay, setManualPlay] = useState(false);
   const [paused, setPaused] = useState(false);
+  const [nextHovered, setNextHovered] = useState(false);
+  const [nextFocused, setNextFocused] = useState(false);
   const [visible, setVisible] = useState(false);
   const [pageVisible, setPageVisible] = useState(!document.hidden);
   const [reduced, setReduced] = useState(
@@ -33,6 +35,8 @@ export default function EraSlideshow({
     visible &&
     pageVisible &&
     !paused &&
+    !nextHovered &&
+    !nextFocused &&
     loaded.length > 1 &&
     (manualPlay || (!reduced && (hovered || focused)));
 
@@ -64,6 +68,8 @@ export default function EraSlideshow({
       setFocused(false);
       setManualPlay(false);
       setPaused(false);
+      setNextHovered(false);
+      setNextFocused(false);
     }
   }, [active]);
 
@@ -179,6 +185,14 @@ export default function EraSlideshow({
         <button
           type="button"
           onClick={next}
+          onPointerEnter={event => {
+            if (event.pointerType === "mouse") setNextHovered(true);
+          }}
+          onPointerLeave={() => setNextHovered(false)}
+          onFocus={event => {
+            if (event.target.matches(":focus-visible")) setNextFocused(true);
+          }}
+          onBlur={() => setNextFocused(false)}
           disabled={loaded.length < 2}
           aria-label={`${era}：下一张图片`}
         >
