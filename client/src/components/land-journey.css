@@ -31,7 +31,7 @@
 }
 .land-journey-stage {
   position: relative;
-  height: 580px;
+  height: 640px;
   overflow: hidden;
   border: 1px solid #c9b992;
   border-radius: 20px 20px 3px 3px;
@@ -67,10 +67,13 @@
   left: 34px;
   text-shadow: 0 1px 4px #fffae9;
   padding: 12px 17px;
-  background: #fff8e9d9;
-  border: 1px solid #c6b58c66;
+  background: linear-gradient(135deg, #fffdf980, #fff2d64d);
+  border: 1px solid #b9a16a99;
   border-radius: 10px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  box-shadow:
+    inset 0 1px 0 #ffffffe0,
+    0 5px 18px #68532915;
 }
 .land-journey-era > span {
   font:
@@ -139,10 +142,13 @@
 .land-journey-bubble {
   position: absolute;
   top: 24px;
-  left: calc(57% - 225px);
-  width: 450px;
+  left: calc(57% - 405px);
+  width: 630px;
+  display: grid;
+  grid-template-columns: 158px minmax(0, 1fr);
+  gap: 22px;
   padding: 18px 25px 16px;
-  background: #fffaf0f5;
+  background: #fffaf0;
   border: 1px solid #b5a079a8;
   border-radius: 17px;
   box-shadow:
@@ -157,7 +163,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: calc(50% - 10px);
+  left: calc(100% - 235px);
   bottom: -11px;
   background: #fffaf0;
   transform: rotate(45deg);
@@ -182,7 +188,7 @@
   color: #564831;
   margin: 0;
 }
-.land-journey-bubble button {
+.land-journey-read {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -192,6 +198,43 @@
   font-size: 14px;
   border-bottom: 1px solid #bfa578;
   cursor: pointer;
+}
+.land-journey-material {
+  display: grid;
+  grid-template-rows: 180px auto;
+  align-content: center;
+  align-self: stretch;
+  min-width: 0;
+  padding: 8px;
+  background: #efe5cf;
+  border: 1px solid #c6b58f;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: border-color 200ms;
+}
+.land-journey-material img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-height: 0;
+}
+.land-journey-material > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #72532c;
+  text-align: left;
+}
+.land-journey-material svg {
+  flex-shrink: 0;
+}
+.land-journey-material:hover {
+  border-color: #8b6c34;
 }
 .land-journey-arrow {
   position: absolute;
@@ -205,10 +248,12 @@
   gap: 5px;
   border: 1px solid #b49968;
   border-radius: 28px;
-  background: #fff9eacc;
+  background: linear-gradient(135deg, #fffdf980, #fff2d64d);
   color: #765526;
-  box-shadow: 0 3px 16px #61502618;
-  backdrop-filter: blur(7px);
+  box-shadow:
+    inset 0 1px 0 #ffffffe0,
+    0 3px 16px #61502625;
+  backdrop-filter: blur(8px);
   cursor: pointer;
   transition:
     background 200ms,
@@ -218,7 +263,7 @@
   font-size: 10px;
 }
 .land-journey-arrow:not(:disabled):hover {
-  background: #fffcf3;
+  background: linear-gradient(135deg, #fffdf9ab, #fff2d675);
   transform: translateY(-2px);
 }
 .land-journey-arrow:disabled {
@@ -251,7 +296,8 @@
 .land-journey-stops {
   display: grid;
   grid-template-columns: repeat(9, minmax(0, 1fr));
-  background: #fcf7eae6;
+  background: #fcf7ea66;
+  backdrop-filter: blur(8px);
   border: 1px solid #c9b992;
   border-top: 0;
   border-radius: 0 0 14px 14px;
@@ -286,7 +332,7 @@
   width: 32px;
   height: 32px;
   border: 1px solid #c8b288;
-  background: #faf5e7;
+  background: #faf5e780;
   border-radius: 50%;
   font:
     12px/1 system-ui,
@@ -301,7 +347,7 @@
   text-align: center;
 }
 .land-journey-stops button[aria-current="step"] > span {
-  background: #8b6c34;
+  background: #8b6c34c9;
   border-color: #8b6c34;
   color: #fff9e6;
 }
@@ -354,7 +400,35 @@
     transform: translateX(16px);
   }
 }
-@media (max-width: 1000px) {
+/* Glass surfaces keep the type and source images fully opaque. */
+.culture-catalog.culture-catalog--land .culture-card {
+  background: #fffaf066;
+  border-color: #ad8d4b80;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    inset 0 1px 0 #ffffffd9,
+    0 7px 18px #60401414;
+}
+.culture-catalog.culture-catalog--land .culture-card-image {
+  background: linear-gradient(145deg, #fff9ec33, #eee1c726);
+}
+.culture-catalog.culture-catalog--land .culture-card-body {
+  background: linear-gradient(145deg, #fffdf433, #eddfbc14);
+}
+.culture-catalog.culture-catalog--land .culture-categories button,
+.culture-catalog.culture-catalog--land .culture-search {
+  background: #fffaf066;
+  backdrop-filter: blur(8px);
+  border-color: #ad8d4b80;
+  box-shadow: inset 0 1px 0 #ffffffcc;
+}
+.culture-catalog.culture-catalog--land
+  .culture-categories
+  button[aria-pressed="true"] {
+  background: #7f6026c9;
+  color: #fffaf0;
+}
+@media (max-width: 1200px) {
   .land-journey {
     width: calc(100% - 40px);
   }
@@ -370,13 +444,15 @@
     font-size: 21px;
   }
   .land-journey-bubble {
-    top: 120px;
-    left: calc(57% - 200px);
-    width: 400px;
+    top: 150px;
+    left: max(75px, calc(57% - 405px));
+    width: min(630px, calc(100% - 150px));
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 18px;
     padding: 17px 21px;
   }
   .land-journey-stage {
-    height: 700px;
+    height: 780px;
   }
   .land-journey-traffic {
     left: 10%;
@@ -386,6 +462,27 @@
   .land-journey-stops {
     overflow-x: auto;
     grid-template-columns: repeat(9, 100px);
+  }
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  .land-journey-bubble {
+    left: 65px;
+    width: calc(100% - 130px);
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 14px;
+    padding: 16px;
+  }
+  .land-journey-bubble::after {
+    left: calc(57% - 10px);
+  }
+  .land-journey-bubble h3 {
+    font-size: 19px;
+  }
+  .land-journey-bubble p {
+    font-size: 16px;
+  }
+  .land-journey-stage {
+    height: 850px;
   }
 }
 @media (max-width: 640px) {
@@ -404,7 +501,7 @@
     font-size: 12px;
   }
   .land-journey-stage {
-    height: 710px;
+    height: 900px;
     border-radius: 14px 14px 2px 2px;
   }
   .land-journey-setting img {
@@ -412,10 +509,8 @@
   }
   .land-journey-era {
     top: 20px;
-    left: 20px;
-    padding: 0;
-    border: 0;
-    background: transparent;
+    left: 18px;
+    padding: 8px 12px;
   }
   .land-journey-era h3 {
     font-size: 22px;
@@ -425,11 +520,30 @@
     font-size: 12px;
   }
   .land-journey-bubble {
-    top: 114px;
-    left: 51px;
-    width: calc(100% - 102px);
+    top: 154px;
+    left: 18px;
+    width: calc(100% - 36px);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
     padding: 15px 16px;
     border-radius: 13px;
+  }
+  .land-journey-bubble::after {
+    left: calc(50% - 10px);
+  }
+  .land-journey-material {
+    display: grid;
+    grid-template-columns: 78px minmax(0, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 10px;
+  }
+  .land-journey-material img {
+    height: 100px;
+  }
+  .land-journey-material > span {
+    padding-top: 0;
   }
   .land-journey-bubble h3 {
     font-size: 18px;
@@ -444,7 +558,7 @@
     font-size: 11px;
     letter-spacing: 0;
   }
-  .land-journey-bubble button {
+  .land-journey-read {
     font-size: 12px;
     min-height: 42px;
   }
@@ -468,7 +582,8 @@
   .land-journey-arrow {
     width: 44px;
     min-height: 66px;
-    top: 41%;
+    top: auto;
+    bottom: 118px;
     border-radius: 20px;
   }
   .land-journey-prev {

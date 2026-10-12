@@ -3,6 +3,7 @@
 这是独立的公开副本，保留原项目历史；原源码和原网页不随这里的修改变化。
 
 - [查看副本网页](https://asukaneko-39.github.io/csz2-timeline-slideshow/#cover)
+- [土地制度图片对话与半透明界面记录](docs/releases/land-glass-20261012.md)
 - [土地制度互动模块记录](docs/releases/land-journey-20261012.md)
 - [本次修改记录](docs/releases/csz2-slideshow-20261012.md)
 - [现行设计](design.md) · [设计理念](ideal.md)

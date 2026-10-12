@@ -6,6 +6,7 @@ import {
   Footprints,
 } from "lucide-react";
 import { landJourney } from "@/data/landJourney";
+import { landItems } from "@/data/catalog";
 import { assetUrl } from "@/lib/assets";
 import "./land-journey.css";
 
@@ -41,6 +42,7 @@ export default function LandJourney({
   const busy = useRef(false);
   const mounted = useRef(true);
   const stage = landJourney[index];
+  const material = landItems.find(item => item.id === stage.id)?.images[0];
   const unavailable = phase !== "settled" || loading;
 
   useEffect(() => {
@@ -55,8 +57,14 @@ export default function LandJourney({
     [index - 1, index + 1]
       .filter(i => i >= 0 && i < landJourney.length)
       .forEach(i => {
-        const image = new Image();
-        image.src = imagePath(landJourney[i].scene);
+        const material = landItems.find(item => item.id === landJourney[i].id)
+          ?.images[0];
+        [imagePath(landJourney[i].scene), material && assetUrl(material.src)]
+          .filter((src): src is string => Boolean(src))
+          .forEach(src => {
+            const image = new Image();
+            image.src = src;
+          });
       });
   }, [index]);
 
@@ -72,10 +80,22 @@ export default function LandJourney({
     setLoading(true);
     setDirection(target > index ? 1 : -1);
     // Do not fade away a working scene while its replacement is still loading.
-    const image = new Image();
-    image.src = imagePath(landJourney[target].scene);
+    const targetMaterial = landItems.find(
+      item => item.id === landJourney[target].id
+    )?.images[0];
     try {
-      await image.decode();
+      await Promise.all(
+        [
+          imagePath(landJourney[target].scene),
+          targetMaterial && assetUrl(targetMaterial.src),
+        ]
+          .filter((src): src is string => Boolean(src))
+          .map(src => {
+            const image = new Image();
+            image.src = src;
+            return image.decode();
+          })
+      );
     } catch {
       /* CSS paper surface remains as a fallback. */
     }
@@ -173,13 +193,34 @@ export default function LandJourney({
           />
         </div>
         <div className="land-journey-bubble" inert={unavailable}>
-          <span className="land-journey-speaker">田间讲述人 · {stage.era}</span>
-          <h3>{stage.principle}</h3>
-          <p>{stage.speech}</p>
-          <button onClick={() => onRead(stage.id)}>
-            翻阅本期土地制度
-            <ArrowUpRight size={16} />
-          </button>
+          {material && (
+            <button
+              type="button"
+              className="land-journey-material"
+              onClick={() => onRead(stage.id)}
+              aria-label={`查看${material.caption}资料`}
+            >
+              <img src={assetUrl(material.src)} alt={material.caption} />
+              <span>
+                {material.caption}
+                <ArrowUpRight size={14} aria-hidden="true" />
+              </span>
+            </button>
+          )}
+          <div className="land-journey-dialogue">
+            <span className="land-journey-speaker">
+              田间讲述人 · {stage.era}
+            </span>
+            <h3>{stage.principle}</h3>
+            <p>{stage.speech}</p>
+            <button
+              className="land-journey-read"
+              onClick={() => onRead(stage.id)}
+            >
+              翻阅本期土地制度
+              <ArrowUpRight size={16} />
+            </button>
+          </div>
         </div>
         <button
           className="land-journey-arrow land-journey-prev"
