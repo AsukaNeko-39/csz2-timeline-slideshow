@@ -1,9 +1,10 @@
 {
   "version": "csz2",
-  "name": "CSZ2版",
-  "date": "2026-09-22",
-  "sourceRepository": "AsukaNeko-39/-CSZ1",
+  "name": "CSZ2版 · 发展脉络轮播副本",
+  "date": "2026-10-12",
+  "sourceRepository": "AsukaNeko-39/csz2-timeline-slideshow",
   "sourceRef": "main",
-  "baselineTag": "csz2",
-  "revision": "landscape-cover-20260922"
+  "baselineRepository": "AsukaNeko-39/-CSZ1",
+  "baselineCommit": "68563c8e5e299d3a3f00156ba57f0c4288c69dbe",
+  "revision": "timeline-slideshow-20261012"
 }
