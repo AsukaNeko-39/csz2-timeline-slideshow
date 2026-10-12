@@ -170,10 +170,27 @@ export default function LandJourney({
           />
         </div>
         <div className="land-journey-atmosphere" aria-hidden="true" />
-        <div className="land-journey-era" aria-hidden="true">
-          <span>{String(index + 1).padStart(2, "0")} / 09</span>
-          <h3>{stage.era}</h3>
-          <p>{stage.period}</p>
+        <div className="land-journey-sidebar" inert={unavailable}>
+          <div className="land-journey-era" aria-hidden="true">
+            <span>{String(index + 1).padStart(2, "0")} / 09</span>
+            <h3>{stage.era}</h3>
+            <p>{stage.period}</p>
+          </div>
+          {material && (
+            <button
+              type="button"
+              className="land-journey-material"
+              disabled={unavailable}
+              onClick={() => onRead(stage.id)}
+              aria-label={`查看${material.caption}资料`}
+            >
+              <img src={assetUrl(material.src)} alt={material.caption} />
+              <span>
+                {material.caption}
+                <ArrowUpRight size={12} aria-hidden="true" />
+              </span>
+            </button>
+          )}
         </div>
         <LandRoadTraffic index={index} />
         <div
@@ -190,20 +207,6 @@ export default function LandJourney({
           />
         </div>
         <div className="land-journey-bubble" inert={unavailable}>
-          {material && (
-            <button
-              type="button"
-              className="land-journey-material"
-              onClick={() => onRead(stage.id)}
-              aria-label={`查看${material.caption}资料`}
-            >
-              <img src={assetUrl(material.src)} alt={material.caption} />
-              <span>
-                {material.caption}
-                <ArrowUpRight size={14} aria-hidden="true" />
-              </span>
-            </button>
-          )}
           <div className="land-journey-dialogue">
             <span className="land-journey-speaker">
               田间讲述人 · {stage.era}
@@ -212,10 +215,11 @@ export default function LandJourney({
             <p>{stage.speech}</p>
             <button
               className="land-journey-read"
+              aria-label="查看本期土地制度详情"
               onClick={() => onRead(stage.id)}
             >
-              翻阅本期土地制度
-              <ArrowUpRight size={16} />
+              查看详情
+              <ArrowUpRight size={12} />
             </button>
           </div>
         </div>

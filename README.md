@@ -3,6 +3,7 @@
 这是独立的公开副本，保留原项目历史；原源码和原网页不随这里的修改变化。
 
 - [查看副本网页](https://asukaneko-39.github.io/csz2-timeline-slideshow/#cover)
+- [悬浮资料图与口语化讲述](docs/releases/land-sidebar-20261012.md)
 - [三层切换与高透明液态玻璃按键](docs/releases/land-three-stage-20261012.md)
 - [道路人车比例、位置与另一侧新增素材](docs/releases/land-road-20261012.md)
 - [土地制度图片对话与半透明界面记录](docs/releases/land-glass-20261012.md)

@@ -72,34 +72,41 @@
   pointer-events: none;
   transition: opacity 460ms ease;
 }
-.land-journey-era {
+.land-journey-sidebar {
   position: absolute;
-  top: 30px;
+  top: 24px;
   left: 34px;
+  width: 182px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: opacity 460ms ease;
+}
+.land-journey-era {
   text-shadow: 0 1px 4px #fffae9;
-  padding: 12px 17px;
+  padding: 9px 12px;
   background: var(--land-glass);
   border: 1px solid #ffffffb3;
   border-radius: 10px;
   backdrop-filter: blur(3px) saturate(1.22);
   box-shadow: var(--land-glass-shadow);
-  transition: opacity 460ms ease;
 }
 .land-journey-era > span {
   font:
-    13px/1.5 system-ui,
+    11px/1.5 system-ui,
     sans-serif;
   letter-spacing: 0.15em;
   color: #886b42;
 }
 .land-journey-era h3 {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  margin: 8px 0;
+  letter-spacing: 0.03em;
+  margin: 4px 0;
 }
 .land-journey-era p {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.5;
   margin: 0;
 }
 .land-journey-traffic {
@@ -157,11 +164,8 @@
 .land-journey-bubble {
   position: absolute;
   top: 24px;
-  left: calc(57% - 405px);
-  width: 630px;
-  display: grid;
-  grid-template-columns: 158px minmax(0, 1fr);
-  gap: 22px;
+  left: calc(57% - 225px);
+  width: 450px;
   padding: 18px 25px 16px;
   background: #fffaf0;
   border: 1px solid #b5a079a8;
@@ -178,7 +182,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: calc(100% - 235px);
+  left: calc(50% - 10px);
   bottom: -11px;
   background: #fffaf0;
   transform: rotate(45deg);
@@ -206,29 +210,39 @@
 .land-journey-read {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  min-height: 38px;
-  margin-top: 9px;
+  gap: 4px;
+  min-height: 30px;
+  margin-top: 12px;
+  align-self: flex-end;
   color: #84622e;
-  font-size: 14px;
-  padding: 6px 12px;
+  font-size: 12px;
+  padding: 3px 6px;
   border: 1px solid #ffffffb3;
-  border-radius: 10px;
+  border-radius: 6px;
   background: var(--land-glass);
-  box-shadow: var(--land-glass-shadow);
+  box-shadow:
+    inset 0 1px 0 #ffffffe6,
+    0 0 0 1px #92734238;
   backdrop-filter: blur(3px) saturate(1.22);
   transition: background 200ms ease;
   cursor: pointer;
 }
+.land-journey-dialogue {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
 .land-journey-material {
   display: grid;
-  grid-template-rows: 180px auto;
+  grid-template-rows: 150px auto;
   align-content: center;
   align-self: stretch;
   min-width: 0;
   padding: 8px;
   background: var(--land-glass);
-  border: 1px solid #c6b58f;
+  backdrop-filter: blur(3px) saturate(1.22);
+  box-shadow: var(--land-glass-shadow);
+  border: 1px solid #ffffffb3;
   border-radius: 9px;
   cursor: pointer;
   transition: border-color 200ms;
@@ -246,7 +260,7 @@
   align-items: center;
   gap: 6px;
   padding-top: 8px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   color: #72532c;
   text-align: left;
@@ -259,7 +273,7 @@
 }
 .land-journey-arrow {
   position: absolute;
-  top: 46%;
+  top: 62%;
   width: 56px;
   min-height: 76px;
   display: flex;
@@ -409,7 +423,7 @@
   outline-offset: 4px;
 }
 .land-journey-stage[data-phase="background-out"]
-  :is(.land-journey-setting, .land-journey-era, .land-journey-atmosphere) {
+  :is(.land-journey-setting, .land-journey-sidebar, .land-journey-atmosphere) {
   opacity: 0;
 }
 .land-journey-stage[data-phase="background-out"] .land-journey-setting {
@@ -501,20 +515,18 @@
   .land-journey-heading > span {
     display: none;
   }
-  .land-journey-era {
-    top: 22px;
-    left: 25px;
-    padding: 8px 13px;
+  .land-journey-sidebar {
+    top: 24px;
+    left: 24px;
+    width: 158px;
   }
   .land-journey-era h3 {
-    font-size: 21px;
+    font-size: 17px;
   }
   .land-journey-bubble {
-    top: 150px;
-    left: max(75px, calc(57% - 405px));
-    width: min(630px, calc(100% - 150px));
-    grid-template-columns: 130px minmax(0, 1fr);
-    gap: 18px;
+    top: 24px;
+    left: max(210px, calc(57% - 225px));
+    width: min(450px, calc(100% - 280px));
     padding: 17px 21px;
   }
   .land-journey-stage {
@@ -527,14 +539,12 @@
 }
 @media (min-width: 641px) and (max-width: 800px) {
   .land-journey-bubble {
-    left: 65px;
-    width: calc(100% - 130px);
-    grid-template-columns: 110px minmax(0, 1fr);
-    gap: 14px;
+    left: 210px;
+    width: calc(100% - 270px);
     padding: 16px;
   }
   .land-journey-bubble::after {
-    left: calc(57% - 10px);
+    left: calc(57% - 66px);
   }
   .land-journey-bubble h3 {
     font-size: 19px;
@@ -562,30 +572,32 @@
     font-size: 12px;
   }
   .land-journey-stage {
-    height: 900px;
+    height: 960px;
     border-radius: 14px 14px 2px 2px;
   }
   .land-journey-setting img {
     object-position: 48% bottom;
   }
-  .land-journey-era {
+  .land-journey-sidebar {
     top: 20px;
     left: 18px;
-    padding: 8px 12px;
+    width: 144px;
+    gap: 10px;
+  }
+  .land-journey-era {
+    padding: 8px 10px;
   }
   .land-journey-era h3 {
-    font-size: 22px;
-    margin: 5px 0;
+    font-size: 16px;
+    margin: 4px 0;
   }
   .land-journey-era p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .land-journey-bubble {
-    top: 154px;
+    top: 320px;
     left: 18px;
     width: calc(100% - 36px);
-    grid-template-columns: minmax(0, 1fr);
-    gap: 12px;
     padding: 15px 16px;
     border-radius: 13px;
   }
@@ -593,18 +605,16 @@
     left: calc(50% - 10px);
   }
   .land-journey-material {
-    display: grid;
-    grid-template-columns: 78px minmax(0, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 112px auto;
     align-items: center;
-    gap: 12px;
-    padding: 7px 10px;
+    padding: 6px;
   }
   .land-journey-material img {
-    height: 100px;
+    height: 112px;
   }
   .land-journey-material > span {
-    padding-top: 0;
+    padding-top: 7px;
+    font-size: 11px;
   }
   .land-journey-bubble h3 {
     font-size: 18px;
@@ -621,7 +631,7 @@
   }
   .land-journey-read {
     font-size: 12px;
-    min-height: 42px;
+    min-height: 36px;
   }
   .land-journey-narrator {
     width: 150px;
