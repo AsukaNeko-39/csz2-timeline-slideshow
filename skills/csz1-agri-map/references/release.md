@@ -1,3 +1,17 @@
+## 2026-10-12：独立轮播副本（当前维护目标）
+
+本目录为 `csz2-timeline-slideshow`，源自原项目提交 `68563c8e5e299d3a3f00156ba57f0c4288c69dbe`，保留历史。只在副本修改和发布，原 `-CSZ1` 源码、`-CSZ1-pages` 网站及原本地目录均不修改。
+
+- 当前源码： https://github.com/AsukaNeko-39/csz2-timeline-slideshow （公开）。
+- 本地目录： `C:/Users/20401/Desktop/农耕文明/csz2-timeline-slideshow`；预览端口 `3001`。
+- 副本网页： https://asukaneko-39.github.io/csz2-timeline-slideshow/#cover 。
+- 发布到本仓库 `gh-pages` 分支根目录，构建资源前缀为 `/csz2-timeline-slideshow/`；不得照搬下方历史记录向原仓库发布。
+- 发展脉络五张卡片各使用三张对应时代图片：鼠标移入左侧图片区每 2.8 秒循环淡入，移开复位；手动下一张和播放/暂停支持触屏及键盘。非当前卡片、离开视口及隐藏标签页暂停；减少动态效果设置下不因悬停自动播放。
+- 文献、器物完整展示，原图模糊延展填充空余区域；保留正文分页、标题和原跳转。图片来源为项目已有资料，未生成历史图像。
+- 新实现： `client/src/components/EraSlideshow.tsx`、`era-slideshow.css`、`client/src/data/timelineSlides.ts`。
+
+以下为历史记录；其中旧路径、隐私状态和发布目标不代表当前副本。
+
 # 发布与修改记录
 
 按当前用户请求和已有授权决定是否上传。仅查看、打包 skill 或讨论设计，不自动发布网页；已授权的上传无需再次索取相同确认。此文件不是新操作的授权。

@@ -1,0 +1,118 @@
+.culture-era-visual .era-slides,
+.culture-era-visual .era-slide {
+  position: absolute;
+  inset: 0;
+}
+.culture-era-visual .era-slide {
+  opacity: 0;
+  transition: opacity 700ms ease;
+  background-size: cover;
+  background-position: center;
+}
+.culture-era-visual .era-slide[data-current="true"] {
+  opacity: 1;
+}
+.culture-era-visual .era-slide img {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82);
+}
+.culture-era-visual .era-slide-contain {
+  background-size: 0;
+}
+.culture-era-visual .era-slide-contain::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px);
+  opacity: 0.7;
+}
+.culture-era-visual .era-slide-contain img {
+  object-fit: contain;
+}
+.era-slideshow .culture-era-art-wash {
+  pointer-events: none;
+}
+.culture-era-visual .era-slide-controls {
+  position: absolute;
+  top: 21px;
+  right: 18px;
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+.culture-era-visual .era-slide-controls button {
+  min-height: 36px;
+  min-width: 36px;
+  padding: 6px 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid #fff5d780;
+  border-radius: 8px;
+  background: #302b1a75;
+  color: #fff9e6;
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  font:
+    14px/1.2 system-ui,
+    sans-serif;
+}
+.culture-era-visual .era-slide-controls button:hover {
+  background: #302b1ab8;
+}
+.culture-era-visual .era-slide-controls button:focus-visible {
+  outline: 2px solid #fff4ba;
+  outline-offset: 3px;
+}
+.culture-era-visual .era-slide-controls button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.culture-era-visual .era-slide-label {
+  position: absolute;
+  top: 76px;
+  left: 23px;
+  right: 18px;
+  width: fit-content;
+  max-width: calc(100% - 41px);
+  margin: 0;
+  padding: 4px 9px;
+  border-radius: 4px;
+  background: #2927196e;
+  color: #fff7df;
+  text-shadow: 0 1px 3px #0008;
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .culture-era-visual .era-slide-controls {
+    top: 10px;
+    right: 12px;
+  }
+  .culture-era-visual .era-slide-controls button {
+    min-width: 38px;
+    min-height: 38px;
+  }
+  .culture-era-visual .era-slide-label {
+    top: 53px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 3px 7px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .culture-era-visual .era-slide {
+    transition: none;
+  }
+}

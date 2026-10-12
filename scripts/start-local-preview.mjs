@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const address = 'http://127.0.0.1:3000/';
+const address = 'http://127.0.0.1:3001/';
 const welcomeAddress = address + '#cover';
 const sourceFile = path.join(root, 'client/src/components/BottomModules.tsx').replaceAll('\\', '/');
 const vite = path.join(root, 'node_modules/vite/bin/vite.js');
@@ -26,7 +26,7 @@ async function inspectServer() {
 
 async function main() {
   let status = await inspectServer();
-  if (status === 'other-project') throw new Error('3000 端口被其他页面占用。请先关闭那个服务，再运行本入口。');
+  if (status === 'other-project') throw new Error('3001 端口被其他页面占用。请先关闭那个服务，再运行本入口。');
   if (status === 'stopped') {
     if (!existsSync(vite)) throw new Error('缺少项目依赖，请先在项目目录运行 npm install。');
     const logs = path.join(tmpdir(), 'huxiang-preview-' + createHash('sha256').update(root).digest('hex').slice(0, 12));
@@ -34,7 +34,7 @@ async function main() {
     const logFile = path.join(logs, 'vite.log');
     const log = openSync(logFile, 'a');
     let launchError;
-    const child = spawn(process.execPath, [vite, '--host', '127.0.0.1', '--port', '3000', '--strictPort'], {
+    const child = spawn(process.execPath, [vite, '--host', '127.0.0.1', '--port', '3001', '--strictPort'], {
       cwd: root, detached: true, windowsHide: true, stdio: ['ignore', log, log],
     });
     child.on('error', error => { launchError = error; });

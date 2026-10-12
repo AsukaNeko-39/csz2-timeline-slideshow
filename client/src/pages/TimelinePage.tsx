@@ -8,6 +8,8 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { timeline } from "@/data/catalog";
+import { timelineSlides } from "@/data/timelineSlides";
+import EraSlideshow from "@/components/EraSlideshow";
 import { culturePoints } from "@/data/points";
 import { assetUrl } from "@/lib/assets";
 import { SectionHeading } from "./CatalogPage";
@@ -147,8 +149,11 @@ export default function TimelinePage({
               aria-label={item.era}
               data-active={active === index}
             >
-              <div className="culture-era-visual">
-                <img src={assetUrl(item.image)} alt={item.era} loading="lazy" />
+              <EraSlideshow
+                slides={timelineSlides[item.id]}
+                active={active === index}
+                era={item.era}
+              >
                 <div className="culture-era-art-wash" />
                 <span className="era-stamp">
                   湖湘纪事 · {String(index + 1).padStart(2, "0")}
@@ -173,7 +178,7 @@ export default function TimelinePage({
                     <ArrowUpRight size={14} />
                   </button>
                 </div>
-              </div>
+              </EraSlideshow>
               <div className="culture-era-body">
                 <div className="era-page-heading">
                   <p className="culture-overline">
