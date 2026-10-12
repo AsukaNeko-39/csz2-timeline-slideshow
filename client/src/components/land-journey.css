@@ -1,0 +1,499 @@
+.land-journey {
+  width: min(1380px, calc(100% - 64px));
+  margin: 0 auto 56px;
+  color: #493820;
+}
+.land-journey-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 3px 18px;
+  gap: 24px;
+}
+.land-journey-heading p {
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: #947044;
+  margin: 0 0 8px;
+}
+.land-journey-heading h2 {
+  font-size: clamp(23px, 2.1vw, 30px);
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin: 0;
+}
+.land-journey-heading > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  color: #796443;
+}
+.land-journey-stage {
+  position: relative;
+  height: 580px;
+  overflow: hidden;
+  border: 1px solid #c9b992;
+  border-radius: 20px 20px 3px 3px;
+  background: #ede2ca;
+  isolation: isolate;
+  --travel-offset: 12px;
+}
+.land-journey-stage[data-direction="-1"] {
+  --travel-offset: -12px;
+}
+.land-journey-setting {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 460ms ease,
+    transform 650ms ease;
+}
+.land-journey-setting img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.land-journey-atmosphere {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #faf6e940, transparent 55%, #b69e6726);
+  pointer-events: none;
+}
+.land-journey-era {
+  position: absolute;
+  top: 30px;
+  left: 34px;
+  text-shadow: 0 1px 4px #fffae9;
+  padding: 12px 17px;
+  background: #fff8e9d9;
+  border: 1px solid #c6b58c66;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+.land-journey-era > span {
+  font:
+    13px/1.5 system-ui,
+    sans-serif;
+  letter-spacing: 0.15em;
+  color: #886b42;
+}
+.land-journey-era h3 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 8px 0;
+}
+.land-journey-era p {
+  font-size: 14px;
+  margin: 0;
+}
+.land-journey-traffic {
+  position: absolute;
+  width: 230px;
+  height: 153.33px;
+  left: 16%;
+  bottom: 46px;
+  transition:
+    opacity 260ms ease,
+    transform 460ms ease;
+}
+.land-journey-traffic-sprite {
+  width: 100%;
+  height: 100%;
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  animation: land-road-drift 9s ease-in-out infinite;
+}
+.land-journey-narrator {
+  position: absolute;
+  width: 170px;
+  height: 255px;
+  left: calc(57% - 85px);
+  bottom: 36px;
+  transition:
+    opacity 340ms ease,
+    transform 420ms ease;
+}
+.land-journey-character {
+  width: 100%;
+  height: 100%;
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  animation: land-guide-breathe 5s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+.land-journey-narrator::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 8px;
+  border-radius: 50%;
+  background: #67533424;
+  bottom: 20px;
+  left: 53px;
+  filter: blur(4px);
+  z-index: -1;
+}
+.land-journey-bubble {
+  position: absolute;
+  top: 24px;
+  left: calc(57% - 225px);
+  width: 450px;
+  padding: 18px 25px 16px;
+  background: #fffaf0f5;
+  border: 1px solid #b5a079a8;
+  border-radius: 17px;
+  box-shadow:
+    0 12px 40px #5d4e2414,
+    inset 0 0 25px #d8c89b1f;
+  transition:
+    opacity 240ms ease,
+    transform 420ms ease;
+}
+.land-journey-bubble::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: calc(50% - 10px);
+  bottom: -11px;
+  background: #fffaf0;
+  transform: rotate(45deg);
+  border-right: 1px solid #b5a079a8;
+  border-bottom: 1px solid #b5a079a8;
+}
+.land-journey-speaker {
+  font-size: 12px;
+  color: #96744a;
+  letter-spacing: 0.1em;
+}
+.land-journey-bubble h3 {
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 8px 0 10px;
+  font-weight: 600;
+  color: #553c21;
+}
+.land-journey-bubble p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #564831;
+  margin: 0;
+}
+.land-journey-bubble button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  margin-top: 9px;
+  color: #84622e;
+  font-size: 14px;
+  border-bottom: 1px solid #bfa578;
+  cursor: pointer;
+}
+.land-journey-arrow {
+  position: absolute;
+  top: 46%;
+  width: 56px;
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #b49968;
+  border-radius: 28px;
+  background: #fff9eacc;
+  color: #765526;
+  box-shadow: 0 3px 16px #61502618;
+  backdrop-filter: blur(7px);
+  cursor: pointer;
+  transition:
+    background 200ms,
+    transform 200ms;
+}
+.land-journey-arrow span {
+  font-size: 10px;
+}
+.land-journey-arrow:not(:disabled):hover {
+  background: #fffcf3;
+  transform: translateY(-2px);
+}
+.land-journey-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.land-journey-prev {
+  left: 18px;
+}
+.land-journey-next {
+  right: 18px;
+}
+.land-journey-scene-note {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  font-size: 11px;
+  color: #655137;
+  padding: 3px 6px;
+  background: #fff5df85;
+  border-radius: 3px;
+}
+.land-journey-loading {
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
+  color: #624c2c;
+  font-size: 13px;
+}
+.land-journey-stops {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  background: #fcf7eae6;
+  border: 1px solid #c9b992;
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  padding: 18px 10px;
+}
+.land-journey-stops button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  min-height: 66px;
+  padding: 0 3px;
+  cursor: pointer;
+}
+.land-journey-stops button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  height: 1px;
+  background: #d8c9a8;
+  left: -50%;
+  right: 50%;
+}
+.land-journey-stops button:first-child::before {
+  display: none;
+}
+.land-journey-stops button > span {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c8b288;
+  background: #faf5e7;
+  border-radius: 50%;
+  font:
+    12px/1 system-ui,
+    sans-serif;
+  color: #9b7d4c;
+}
+.land-journey-stops strong {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #7d6848;
+  text-align: center;
+}
+.land-journey-stops button[aria-current="step"] > span {
+  background: #8b6c34;
+  border-color: #8b6c34;
+  color: #fff9e6;
+}
+.land-journey-stops button[aria-current="step"] strong {
+  color: #503918;
+  font-weight: 600;
+}
+.land-journey button:focus-visible {
+  outline: 2px solid #8b6c34;
+  outline-offset: 4px;
+}
+.land-journey-stage:is([data-phase="background-out"], [data-phase="figure-out"])
+  .land-journey-setting {
+  opacity: 0;
+  transform: translateX(calc(var(--travel-offset) * -1));
+}
+.land-journey-stage:is([data-phase="background-out"], [data-phase="figure-out"])
+  .land-journey-traffic {
+  opacity: 0;
+  transform: translateX(calc(var(--travel-offset) * -2));
+}
+.land-journey-stage:is([data-phase="figure-out"], [data-phase="background-in"])
+  :is(.land-journey-narrator, .land-journey-bubble) {
+  opacity: 0;
+  transform: translateY(9px);
+  pointer-events: none;
+}
+.land-journey-stage[data-phase="figure-in"] .land-journey-bubble {
+  transition-delay: 140ms;
+}
+.land-journey-stage:not([data-phase="settled"])
+  :is(.land-journey-character, .land-journey-traffic-sprite) {
+  animation-play-state: paused;
+}
+@keyframes land-guide-breathe {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+@keyframes land-road-drift {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(16px);
+  }
+}
+@media (max-width: 1000px) {
+  .land-journey {
+    width: calc(100% - 40px);
+  }
+  .land-journey-heading > span {
+    display: none;
+  }
+  .land-journey-era {
+    top: 22px;
+    left: 25px;
+    padding: 8px 13px;
+  }
+  .land-journey-era h3 {
+    font-size: 21px;
+  }
+  .land-journey-bubble {
+    top: 120px;
+    left: calc(57% - 200px);
+    width: 400px;
+    padding: 17px 21px;
+  }
+  .land-journey-stage {
+    height: 700px;
+  }
+  .land-journey-traffic {
+    left: 10%;
+    width: 190px;
+    height: 126.67px;
+  }
+  .land-journey-stops {
+    overflow-x: auto;
+    grid-template-columns: repeat(9, 100px);
+  }
+}
+@media (max-width: 640px) {
+  .land-journey {
+    width: calc(100% - 28px);
+    margin-bottom: 36px;
+  }
+  .land-journey-heading {
+    padding-bottom: 14px;
+  }
+  .land-journey-heading h2 {
+    font-size: 23px;
+    letter-spacing: 0.015em;
+  }
+  .land-journey-heading p {
+    font-size: 12px;
+  }
+  .land-journey-stage {
+    height: 710px;
+    border-radius: 14px 14px 2px 2px;
+  }
+  .land-journey-setting img {
+    object-position: 48% bottom;
+  }
+  .land-journey-era {
+    top: 20px;
+    left: 20px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  .land-journey-era h3 {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+  .land-journey-era p {
+    font-size: 12px;
+  }
+  .land-journey-bubble {
+    top: 114px;
+    left: 51px;
+    width: calc(100% - 102px);
+    padding: 15px 16px;
+    border-radius: 13px;
+  }
+  .land-journey-bubble h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 6px 0 8px;
+  }
+  .land-journey-bubble p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .land-journey-speaker {
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .land-journey-bubble button {
+    font-size: 12px;
+    min-height: 42px;
+  }
+  .land-journey-narrator {
+    width: 150px;
+    height: 225px;
+    left: calc(50% - 75px);
+    bottom: 34px;
+  }
+  .land-journey-narrator::after {
+    left: 39px;
+    bottom: 16px;
+  }
+  .land-journey-traffic {
+    width: 130px;
+    height: 86.67px;
+    left: 8px;
+    bottom: 80px;
+    opacity: 0.78;
+  }
+  .land-journey-arrow {
+    width: 44px;
+    min-height: 66px;
+    top: 41%;
+    border-radius: 20px;
+  }
+  .land-journey-prev {
+    left: 2px;
+  }
+  .land-journey-next {
+    right: 2px;
+  }
+  .land-journey-arrow span {
+    font-size: 8px;
+  }
+  .land-journey-scene-note {
+    right: 10px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+  .land-journey-stops {
+    padding: 15px 5px;
+    grid-template-columns: repeat(9, 95px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .land-journey-stage *,
+  .land-journey button {
+    animation: none !important;
+    transition: none !important;
+  }
+}

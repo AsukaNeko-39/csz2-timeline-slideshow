@@ -16,6 +16,7 @@ import {
   type NavigateCulture,
 } from "@/components/CultureScenery";
 import type { CatalogItem } from "@/data/catalog";
+import LandJourney from "@/components/LandJourney";
 
 interface Props {
   title: string;
@@ -109,6 +110,15 @@ export default function CatalogPage({
         kind={kind}
         onNavigate={onNavigate}
       />
+      {kind === "land" && (
+        <LandJourney
+          initialTarget={initialTarget}
+          onRead={id => {
+            const item = items.find(entry => entry.id === id);
+            if (item) setSelected(item);
+          }}
+        />
+      )}
       <div className="culture-catalog-inner">
         <div className="culture-filter-bar">
           <div className="culture-categories" aria-label={`${title}分类`}>
