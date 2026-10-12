@@ -3,6 +3,7 @@
 这是独立的公开副本，保留原项目历史；原源码和原网页不随这里的修改变化。
 
 - [查看副本网页](https://asukaneko-39.github.io/csz2-timeline-slideshow/#cover)
+- [地图底部专题可收起](docs/releases/map-topic-toggle-20261012.md)
 - [左侧资料卡片文字可读性](docs/releases/land-caption-20261012.md)
 - [悬浮资料图与口语化讲述](docs/releases/land-sidebar-20261012.md)
 - [三层切换与高透明液态玻璃按键](docs/releases/land-three-stage-20261012.md)

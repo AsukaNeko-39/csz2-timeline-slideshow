@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import HunanMap from "@/components/HunanMap";
 import LayerPanel from "@/components/LayerPanel";
 import PointDetail from "@/components/PointDetail";
-import BottomModules from "@/components/BottomModules";
+import MapTopicPanel from "@/components/MapTopicPanel";
 import Footer from "@/components/Footer";
 import { chapters } from "@/components/CultureScenery";
 import {
@@ -308,7 +308,7 @@ export default function Home() {
                       onNext={() => stepPoint(1)}
                     />
                   </main>
-                  <BottomModules onNavigate={handleNavChange} />
+                  <MapTopicPanel onNavigate={handleNavChange} />
                   <Footer />
                 </>
               )}

@@ -583,7 +583,7 @@ export default function HunanMap({
       </div>
 
       {/* Scale bar */}
-      <div className="hidden sm:flex absolute bottom-4 left-4 z-[400] items-end gap-0.5 text-xs text-earth/80 bg-white/75 backdrop-blur-[2px] px-2 py-1 rounded border border-gold/10 shadow-sm">
+      <div className="map-scale-bar hidden sm:flex absolute bottom-4 left-4 z-[400] items-end gap-0.5 text-xs text-earth/80 bg-white/75 backdrop-blur-[2px] px-2 py-1 rounded border border-gold/10 shadow-sm">
         <span>0</span>
         <div className="flex items-center">
           <div className="w-12 h-0.5 bg-earth/60 mx-1" />
