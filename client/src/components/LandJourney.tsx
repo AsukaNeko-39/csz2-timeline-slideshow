@@ -13,10 +13,12 @@ import "./land-journey.css";
 
 type Phase =
   | "settled"
+  | "bubble-out"
   | "background-out"
   | "figure-out"
   | "background-in"
-  | "figure-in";
+  | "figure-in"
+  | "bubble-in";
 const imagePath = (name: string) =>
   assetUrl(`/materials/land-journey/${name}.webp`);
 const spritePosition = (index: number): CSSProperties => ({
@@ -107,18 +109,20 @@ export default function LandJourney({
       busy.current = false;
       return;
     }
-    setPhase("background-out");
+    setPhase("bubble-out");
     const after = (delay: number, action: () => void) => {
       timers.current.push(window.setTimeout(action, delay));
     };
-    // Traffic and setting leave first; narrator then leaves; enter in reverse order.
-    after(460, () => setPhase("figure-out"));
-    after(800, () => {
+    // Each layer finishes before the next moves; leave a short breathing interval.
+    after(340, () => setPhase("figure-out"));
+    after(760, () => setPhase("background-out"));
+    after(1300, () => {
       setIndex(target);
       setPhase("background-in");
     });
-    after(1260, () => setPhase("figure-in"));
-    after(1780, () => {
+    after(1840, () => setPhase("figure-in"));
+    after(2260, () => setPhase("bubble-in"));
+    after(2620, () => {
       setPhase("settled");
       busy.current = false;
       timers.current = [];
