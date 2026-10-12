@@ -3,6 +3,7 @@
 这是独立的公开副本，保留原项目历史；原源码和原网页不随这里的修改变化。
 
 - [查看副本网页](https://asukaneko-39.github.io/csz2-timeline-slideshow/#cover)
+- [民俗文化补图与全站图片检查](docs/releases/images-complete-20261013.md)
 - [图注与时间卡片统一玻璃效果](docs/releases/land-caption-glass-20261012.md)
 - [地图底部专题可收起](docs/releases/map-topic-toggle-20261012.md)
 - [左侧资料卡片文字可读性](docs/releases/land-caption-20261012.md)

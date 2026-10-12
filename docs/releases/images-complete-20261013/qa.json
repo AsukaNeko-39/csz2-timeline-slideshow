@@ -1,0 +1,257 @@
+{
+  "catalog": [
+    {
+      "id": "folk-1",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-2",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-3",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-4",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-5",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-6",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-7",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-8",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-9",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-10",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-11",
+      "thumbnail": true,
+      "detailImages": 2
+    },
+    {
+      "id": "folk-12",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-13",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-14",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-15",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-16",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-17",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-18",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "folk-19",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-1",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-2",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-3",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-4",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-5",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-6",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-7",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-8",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-9",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-10",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-11",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-12",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-13",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-14",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-15",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-16",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-17",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-18",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-19",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-20",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-21",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "artifact-22",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-1",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-2",
+      "thumbnail": true,
+      "detailImages": 2
+    },
+    {
+      "id": "land-3",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-4",
+      "thumbnail": true,
+      "detailImages": 2
+    },
+    {
+      "id": "land-5",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-6",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-7",
+      "thumbnail": true,
+      "detailImages": 2
+    },
+    {
+      "id": "land-8",
+      "thumbnail": true,
+      "detailImages": 1
+    },
+    {
+      "id": "land-9",
+      "thumbnail": true,
+      "detailImages": 1
+    }
+  ],
+  "slides": 15,
+  "eras": 9,
+  "errors": []
+}

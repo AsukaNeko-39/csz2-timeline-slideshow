@@ -1,0 +1,878 @@
+[
+  {
+    "src": "/manus-storage/artifacts-hero-bg.webp",
+    "width": 2688,
+    "height": 1152,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/bottom-field-decor.webp",
+    "width": 1920,
+    "height": 822,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/bottom-mountain-decor.webp",
+    "width": 1920,
+    "height": 822,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/bronze-vessel_1645ed5e.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/crop-specimen-1_5f13c604.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/crop-specimen-2_3ac3a75d.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/grain-processing_c71ef1ab.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/granary-model_21525627.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/hero-route-1.webp",
+    "width": 1200,
+    "height": 676,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/hero-route-2.webp",
+    "width": 1200,
+    "height": 676,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/hero-route-3.webp",
+    "width": 1200,
+    "height": 676,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/irrigation-ditch_4625d299.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/logo-stamp.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/ornate-mirror_fc456ecc.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/plow-marks_83f28f57.jpg",
+    "width": 1200,
+    "height": 900,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-chengtoushan.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-gaomiao.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-hengyang.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-hybrid-rice.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-liuyang.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-liye.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-longping-museum.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-pengtoushan.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-shaoshan.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-shibadong.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-tongdao.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-xiangxi-culture.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-yuchanyan.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-yueyang.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/point-ziquejie.jpg",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/rice-icon-headline.webp",
+    "width": 128,
+    "height": 128,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/routes-hero-bg.webp",
+    "width": 2688,
+    "height": 1152,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-chunfen.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-guyu.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-jingzhe.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-lichun.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-lixia.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-qingming.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-xiaoman.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-icon-yushui.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/lotus-decor.webp",
+    "width": 760,
+    "height": 1014,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/rice-branch-decor.webp",
+    "width": 760,
+    "height": 1014,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-bailu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-chunfen.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-chushu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-dahan.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-dashu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-daxue.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-dongzhi.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-guyu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-hanlu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-jingzhe.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-lichun.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-lidong.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-liqiu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-lixia.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-mangzhong.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-qingming.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-qiufen.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-shuangjiang.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-xiaohan.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-xiaoman.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-xiaoshu.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-xiaoxue.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-xiazhi.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/st-yushui.webp",
+    "width": 720,
+    "height": 960,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/solar-terms/tea-leaf-decor.webp",
+    "width": 760,
+    "height": 760,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-hero-bg.webp",
+    "width": 2688,
+    "height": 1152,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-1-prehistoric.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-2-neolithic.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-3-bronze-age.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-4-imperial.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-5-modern.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/timeline-icon-6-hybrid-rice.webp",
+    "width": 256,
+    "height": 256,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/wild-rice-display_9b1d30d0.webp",
+    "width": 2176,
+    "height": 1632,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/xiangxi-brocade-pattern.png",
+    "width": 2191,
+    "height": 718,
+    "ok": true
+  },
+  {
+    "src": "/manus-storage/xiangxi-pattern-footer.webp",
+    "width": 1920,
+    "height": 1080,
+    "ok": true
+  },
+  {
+    "src": "/materials/01发展脉络图.jpg",
+    "width": 18569,
+    "height": 5896,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/chongyang.webp",
+    "width": 600,
+    "height": 400,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/fenjia.webp",
+    "width": 800,
+    "height": 533,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/geyao.webp",
+    "width": 800,
+    "height": 528,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/huoba.webp",
+    "width": 600,
+    "height": 437,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/laba.webp",
+    "width": 1400,
+    "height": 1050,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/nongyan.webp",
+    "width": 510,
+    "height": 773,
+    "ok": true
+  },
+  {
+    "src": "/materials/folk-supplements/panwang.webp",
+    "width": 1280,
+    "height": 851,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-activities.webp",
+    "width": 1536,
+    "height": 1024,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-characters.webp",
+    "width": 1024,
+    "height": 1536,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-road-companions.webp",
+    "width": 1536,
+    "height": 1024,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-1.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-2.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-3.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-4.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-5.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-6.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-7.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-8.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/land-journey/land-scene-9.webp",
+    "width": 1672,
+    "height": 941,
+    "ok": true
+  },
+  {
+    "src": "/materials/welcome/huxiang-landscape-20260922.webp",
+    "width": 1736,
+    "height": 906,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/01诗经.png",
+    "width": 600,
+    "height": 803,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/02楚墓-凹口锄.png",
+    "width": 381,
+    "height": 239,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/02楚墓-铁斧.png",
+    "width": 230,
+    "height": 342,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/03龙山里耶秦简中记录的田租.png",
+    "width": 806,
+    "height": 1589,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/04徐副买地券.png",
+    "width": 739,
+    "height": 800,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/04长沙走马楼三国吴简记录的佃田课赋.png",
+    "width": 603,
+    "height": 1093,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/05明钞本《天圣令》记载的唐代田令.png",
+    "width": 995,
+    "height": 501,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/06陈旉农书.png",
+    "width": 432,
+    "height": 556,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/07沩山寺田地租佃契约.png",
+    "width": 476,
+    "height": 629,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/07湖南地区卖田官契.png",
+    "width": 477,
+    "height": 382,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/08民国时期湖南省人口与耕地数.png",
+    "width": 1267,
+    "height": 880,
+    "ok": true
+  },
+  {
+    "src": "/materials/土地制度/09宁乡县土地房产所有证.png",
+    "width": 995,
+    "height": 1091,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/东岳宫内土地庙.png",
+    "width": 746,
+    "height": 436,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/侗族村寨聚会画面.png",
+    "width": 734,
+    "height": 441,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/凤凰古城杨氏祠堂.png",
+    "width": 1000,
+    "height": 667,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/占天象、测农事.png",
+    "width": 900,
+    "height": 635,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/安仁县春耕开耕.png",
+    "width": 800,
+    "height": 455,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/寨老讲款.png",
+    "width": 508,
+    "height": 357,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/村民进山采集草药.png",
+    "width": 920,
+    "height": 598,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/湖南古村落民居.png",
+    "width": 915,
+    "height": 587,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/湖南饮食习俗.png",
+    "width": 779,
+    "height": 519,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/湘西苗族四月八.png",
+    "width": 999,
+    "height": 719,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/益阳蔡氏联族谱.png",
+    "width": 709,
+    "height": 494,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/端午节赛龙舟.png",
+    "width": 900,
+    "height": 600,
+    "ok": true
+  },
+  {
+    "src": "/materials/民俗文化/苗族服饰.png",
+    "width": 1131,
+    "height": 1026,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/“义仓永定章程”石碑.png",
+    "width": 1185,
+    "height": 450,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/土地改革布告.png",
+    "width": 326,
+    "height": 500,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/坦山岩劝农碑.png",
+    "width": 646,
+    "height": 739,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/大禾人面纹方鼎.png",
+    "width": 803,
+    "height": 708,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/太平天国田凭.png",
+    "width": 403,
+    "height": 500,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/宋元明清各种文献典籍.png",
+    "width": 554,
+    "height": 783,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/家禽家畜圈模型.png",
+    "width": 171,
+    "height": 93,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/湖南直隶凤凰厅均田鱼鳞图册.png",
+    "width": 1268,
+    "height": 845,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/溪州铜柱.png",
+    "width": 414,
+    "height": 276,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/漆器食具.png",
+    "width": 639,
+    "height": 1033,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/炭化稻谷.png",
+    "width": 896,
+    "height": 424,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/皿方罍.png",
+    "width": 556,
+    "height": 765,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/砍砸器.png",
+    "width": 1026,
+    "height": 728,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/粮仓模型.png",
+    "width": 635,
+    "height": 529,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/粮食作物.png",
+    "width": 1269,
+    "height": 887,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/粮食市场管理布告.png",
+    "width": 343,
+    "height": 500,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/素纱单衣.png",
+    "width": 778,
+    "height": 609,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/铁犁头-竖版.png",
+    "width": 1024,
+    "height": 1536,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/铁质耕具.png",
+    "width": 1352,
+    "height": 766,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/铜器锄耕文物组.png",
+    "width": 559,
+    "height": 351,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/陶釜.png",
+    "width": 543,
+    "height": 678,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/隋大业六年陶买地券及铭文拓片.png",
+    "width": 1267,
+    "height": 1026,
+    "ok": true
+  },
+  {
+    "src": "/materials/重要文物/高山瑶“评皇券牒”木刻板.png",
+    "width": 1213,
+    "height": 616,
+    "ok": true
+  }
+]

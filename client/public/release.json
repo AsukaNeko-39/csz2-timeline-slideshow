@@ -1,10 +1,10 @@
 {
   "version": "csz2",
   "name": "CSZ2版 · 发展脉络轮播副本",
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "sourceRepository": "AsukaNeko-39/csz2-timeline-slideshow",
   "sourceRef": "main",
   "baselineRepository": "AsukaNeko-39/-CSZ1",
   "baselineCommit": "68563c8e5e299d3a3f00156ba57f0c4288c69dbe",
-  "revision": "land-caption-glass-20261012"
+  "revision": "images-complete-20261013"
 }

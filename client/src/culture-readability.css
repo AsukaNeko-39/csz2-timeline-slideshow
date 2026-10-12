@@ -574,6 +574,24 @@
   }
 }
 
+.culture-detail-gallery .culture-image-source {
+  padding: 10px 15px 14px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #675239;
+  overflow-wrap: anywhere;
+}
+.culture-detail-gallery .culture-image-source a {
+  color: #74521e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.culture-detail-gallery .culture-image-source p {
+  margin: 4px 0 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 @media (min-width: 641px) {
   .culture-timeline .culture-section-hero {
     min-height: 138px;

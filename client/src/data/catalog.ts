@@ -5,7 +5,16 @@ export interface CatalogItem {
   category: string;
   description: string;
   tags: string[];
-  images: { src: string; caption: string }[];
+  images: {
+    src: string;
+    caption: string;
+    source?: {
+      label: string;
+      url: string;
+      license?: { label: string; url: string };
+      note?: string;
+    };
+  }[];
   details: { label: string; value: string }[];
   references: string[];
 }
@@ -613,7 +622,17 @@ export const folkItems: CatalogItem[] = [
     description:
       "湖南民间传统的、正式的分家一般要等家庭中所有儿子都结婚后才举行。分家的内容一为房屋，二为田地，三为各种积蓄、债务和农具。在农村，房屋、田地是农民的主要财产。分家时对田地的析分是任何一个新家安身立命的基础和拥有财富的起点。田地位置的远近、质量的好坏、面积的大小都是兄弟分家时需要细分的重要内容。",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/fenjia.webp",
+        caption: "怀化民间契约文书展厅（相关资料）",
+        source: {
+          label: "红网怀化站 · 卓东",
+          url: "https://hh.rednet.cn/content/646655/68/12084796.html",
+          note: "展览含分家析产类文书，图片为展厅场景，并非某一份分家契约的辨认图。本文为怀化站原创文章，转载请附上原文出处链接和本声明。",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -745,7 +764,16 @@ export const folkItems: CatalogItem[] = [
     description:
       "湘西白族农历六月二十五日的节日，通过耍火把、照谷穗等仪式预祝五谷丰登、消除虫害。",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/huoba.webp",
+        caption: "湘西白族火把节",
+        source: {
+          label: "湖南省人民政府门户网站（这里是湖南）",
+          url: "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685352.html",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -762,7 +790,16 @@ export const folkItems: CatalogItem[] = [
     description:
       "农历九月初九，秋收完成后谢丰收，习俗包括登高、饮菊花酒、做糯米糍互相馈赠",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/chongyang.webp",
+        caption: "凤凰腊尔山“迎重阳·庆丰收”活动",
+        source: {
+          label: "湖南省文化和旅游厅 · 凤凰融媒",
+          url: "https://whhlyt.hunan.gov.cn/whhlyt/news/sxxw/202310/t20231027_31721498.html",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -779,7 +816,17 @@ export const folkItems: CatalogItem[] = [
     description:
       "瑶族最盛大的节日，农历十月十六举办，祭祀盘王、唱盘王歌、跳盘王舞，兼具祭祀、丰收庆祝、青年社交功能",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/panwang.webp",
+        caption: "江永原生态舞蹈《祭盘王》展演",
+        source: {
+          label: "江永县文化馆／江永县人民政府",
+          url: "https://www.jiangyong.gov.cn/jiangyong/ggwhfw/202306/b58b1cd3c8fb45bab06c0ef2b7bc7dc1.shtml",
+          note: "图片为文化和自然遗产日的祭盘王舞蹈展演，并非农历十月十六的节日现场。",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -796,7 +843,21 @@ export const folkItems: CatalogItem[] = [
     description:
       "农历腊月初八，祭祀祖先神灵、祈求丰收，各地均有吃腊八粥的习俗，粥品花样繁多",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/laba.webp",
+        caption: "腊八粥（节日食俗示例）",
+        source: {
+          label: "bfishadow / Wikimedia Commons",
+          url: "https://commons.wikimedia.org/wiki/File:Laba_Congee._After.jpg",
+          note: "食俗示例，不特指湖南某地。图片已缩小尺寸并转为 WebP。",
+          license: {
+            label: "CC BY 2.0",
+            url: "https://creativecommons.org/licenses/by/2.0/",
+          },
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -813,7 +874,16 @@ export const folkItems: CatalogItem[] = [
     description:
       "包含劳动歌、仪式歌、情歌等类别，劳动歌伴随生产活动演唱，可协调劳动节奏、鼓舞情绪；地方传说承载了民众对家乡的文化认同",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/geyao.webp",
+        caption: "表演唱《安乡硪歌》",
+        source: {
+          label: "红网常德站 · 曾鑫、王兆龙、陈功",
+          url: "https://cd.rednet.cn/content/646945/64/14642730.html",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",
@@ -830,7 +900,17 @@ export const folkItems: CatalogItem[] = [
     description:
       "方言中保留大量和农耕相关的特有表述，民间俗语总结了劝农、耕作、牲畜喂养、蔬菜种植等各方面的生产生活经验",
     tags: [],
-    images: [],
+    images: [
+      {
+        src: "/materials/folk-supplements/nongyan.webp",
+        caption: "衡阳春耕稻田（农谚相关生产场景）",
+        source: {
+          label: "湖南日报／华声在线 · 刘欣荣",
+          url: "https://hunan.voc.com.cn/news/202302/23033337.html",
+          note: "衡阳县台源镇台九村农机翻耕稻田，展示农谚所源的生产经验，非方言采集现场。",
+        },
+      },
+    ],
     details: [
       {
         label: "典型民俗示例",

@@ -272,6 +272,32 @@ export default function CatalogPage({
                           {img.caption}
                           <span>点击查看原图</span>
                         </figcaption>
+                        {img.source && (
+                          <div className="culture-image-source">
+                            图片来源：
+                            <a
+                              href={img.source.url}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {img.source.label}
+                            </a>
+                            {img.source.license && (
+                              <>
+                                {" "}
+                                ·{" "}
+                                <a
+                                  href={img.source.license.url}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  {img.source.license.label}
+                                </a>
+                              </>
+                            )}
+                            {img.source.note && <p>{img.source.note}</p>}
+                          </div>
+                        )}
                       </figure>
                     ))}
                   </div>

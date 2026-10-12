@@ -1,0 +1,87 @@
+[
+  {
+    "id": "folk-8",
+    "src": "/materials/folk-supplements/fenjia.webp",
+    "caption": "怀化民间契约文书展厅（相关资料）",
+    "source": {
+      "label": "红网怀化站 · 卓东",
+      "url": "https://hh.rednet.cn/content/646655/68/12084796.html",
+      "note": "展览含分家析产类文书，图片为展厅场景，并非某一份分家契约的辨认图。本文为怀化站原创文章，转载请附上原文出处链接和本声明。"
+    },
+    "bytes": 46542,
+    "originalFile": "folk-fenjia-2.jpg"
+  },
+  {
+    "id": "folk-14",
+    "src": "/materials/folk-supplements/huoba.webp",
+    "caption": "湘西白族火把节",
+    "source": {
+      "label": "湖南省人民政府门户网站（这里是湖南）",
+      "url": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/gms/201711/t20171111_4685352.html"
+    },
+    "bytes": 61358,
+    "originalFile": "folk-huoba.jpg"
+  },
+  {
+    "id": "folk-15",
+    "src": "/materials/folk-supplements/chongyang.webp",
+    "caption": "凤凰腊尔山“迎重阳·庆丰收”活动",
+    "source": {
+      "label": "湖南省文化和旅游厅 · 凤凰融媒",
+      "url": "https://whhlyt.hunan.gov.cn/whhlyt/news/sxxw/202310/t20231027_31721498.html"
+    },
+    "bytes": 71134,
+    "originalFile": "folk-chongyang.png"
+  },
+  {
+    "id": "folk-16",
+    "src": "/materials/folk-supplements/panwang.webp",
+    "caption": "江永原生态舞蹈《祭盘王》展演",
+    "source": {
+      "label": "江永县文化馆／江永县人民政府",
+      "url": "https://www.jiangyong.gov.cn/jiangyong/ggwhfw/202306/b58b1cd3c8fb45bab06c0ef2b7bc7dc1.shtml",
+      "note": "图片为文化和自然遗产日的祭盘王舞蹈展演，并非农历十月十六的节日现场。"
+    },
+    "bytes": 193734,
+    "originalFile": "folk-panwang.jpg"
+  },
+  {
+    "id": "folk-17",
+    "src": "/materials/folk-supplements/laba.webp",
+    "caption": "腊八粥（节日食俗示例）",
+    "source": {
+      "label": "bfishadow / Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Laba_Congee._After.jpg",
+      "note": "食俗示例，不特指湖南某地。图片已缩小尺寸并转为 WebP。",
+      "license": {
+        "label": "CC BY 2.0",
+        "url": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    "bytes": 103284,
+    "originalFile": "folk-laba.jpg"
+  },
+  {
+    "id": "folk-18",
+    "src": "/materials/folk-supplements/geyao.webp",
+    "caption": "表演唱《安乡硪歌》",
+    "source": {
+      "label": "红网常德站 · 曾鑫、王兆龙、陈功",
+      "url": "https://cd.rednet.cn/content/646945/64/14642730.html"
+    },
+    "bytes": 76404,
+    "originalFile": "folk-geyao.jpg"
+  },
+  {
+    "id": "folk-19",
+    "src": "/materials/folk-supplements/nongyan.webp",
+    "caption": "衡阳春耕稻田（农谚相关生产场景）",
+    "source": {
+      "label": "湖南日报／华声在线 · 刘欣荣",
+      "url": "https://hunan.voc.com.cn/news/202302/23033337.html",
+      "note": "衡阳县台源镇台九村农机翻耕稻田，展示农谚所源的生产经验，非方言采集现场。"
+    },
+    "bytes": 208680,
+    "originalFile": "folk-nongyan.jpg"
+  }
+]
